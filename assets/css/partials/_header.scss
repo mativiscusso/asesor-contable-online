@@ -1,0 +1,64 @@
+header {
+  position: relative;
+
+  #call-header {
+    text-align: center;
+    button {
+      background: $gradiente-azul;
+    }
+  }
+
+  #carousel-header {
+    z-index: -10;
+    top: 0;
+    width: 100%;
+    .carousel-item {
+      img {
+        height: 70vh;
+      }
+    }
+  }
+
+  #info-header {
+    background: $gradiente-azul;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  header {
+    #call-header {
+      margin-top: 3rem;
+      padding: 0 4rem;
+      text-align: left;
+    }
+    #info-header {
+      margin-top: 3rem;
+      flex-direction: row !important;
+      border-radius: 2rem !important;
+      div {
+        width: 33%;
+      }
+    }
+    #carousel-header {
+      .carousel-item {
+        img {
+          height: 80vh;
+        }
+      }
+    }
+  }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,175 @@
+section {
+  text-align: center;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+header {
+  position: relative;
+}
+
+header #call-header {
+  text-align: center;
+}
+
+header #call-header button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+}
+
+header #carousel-header {
+  z-index: -10;
+  top: 0;
+  width: 100%;
+}
+
+header #carousel-header .carousel-item img {
+  height: 70vh;
+}
+
+header #info-header {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+}
+
+@media (min-width: 1200px) {
+  header #call-header {
+    margin-top: 3rem;
+    padding: 0 4rem;
+    text-align: left;
+  }
+  header #info-header {
+    margin-top: 3rem;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    border-radius: 2rem !important;
+  }
+  header #info-header div {
+    width: 33%;
+  }
+  header #carousel-header .carousel-item img {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  #comprar {
+    margin-top: 5rem;
+    padding: 0rem 5rem 3rem 3rem;
+  }
+  #comprar div {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  #comprar div button {
+    padding: 2rem;
+  }
+  #comprar div .fa-angle-down {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+#servicios div button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+}
+
+@media (min-width: 1200px) {
+  #servicios {
+    margin: 4rem 0 5rem 0;
+    padding: 0rem 3rem;
+  }
+  #servicios div {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #servicios div button {
+    padding: 2rem;
+    width: 25%;
+  }
+}
+
+#contacto h5 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+}
+
+#contacto form button {
+  width: 50%;
+}
+
+@media (min-width: 1200px) {
+  #contacto h5 {
+    background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+    background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+  }
+  #contacto form button {
+    width: 30%;
+  }
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 5rem 7rem;
+  }
+  footer .wrapper {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+#nosotros header #carousel-header .carousel-item img {
+  height: 70vh;
+}
+
+#nosotros header #info-header {
+  margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+  #nosotros header #carousel-header .carousel-item img {
+    height: 50vh;
+  }
+  #nosotros header #info-header {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #nosotros header #carousel-header .carousel-item img {
+    height: 70vh;
+  }
+  #nosotros header #info-header {
+    margin-top: 19rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #nosotros header #carousel-header .carousel-item img {
+    height: 80vh;
+  }
+  #nosotros header #info-header {
+    margin-top: 20rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
