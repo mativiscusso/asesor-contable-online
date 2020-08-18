@@ -14,3 +14,16 @@ section {
 .transparent {
   background-color: transparent;
 }
+
+.navbar-collapse.collapse.show,
+.navbar-collapse.collapsing {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.968);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.488);
+  width: 80%;
+  z-index: 10;
+  border-radius: 0px 0px 2rem;
+}
