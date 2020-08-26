@@ -3,7 +3,7 @@
     #carousel-header {
       .carousel-item {
         img {
-          height: 70vh;
+          height: 40vh;
         }
       }
     }
@@ -36,30 +36,17 @@
       #carousel-header {
         .carousel-item {
           img {
-            height: 70vh;
+            height: 50vh;
           }
         }
       }
       #info-header {
-        margin-top: 19rem;
+        margin-top: 11rem;
       }
     }
   }
 }
 
 @media (min-width: 1400px) {
-  #nosotros {
-    header {
-      #carousel-header {
-        .carousel-item {
-          img {
-            height: 80vh;
-          }
-        }
-      }
-      #info-header {
-        margin-top: 20rem;
-      }
-    }
-  }
+
 }

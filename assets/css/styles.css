@@ -1,9 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+body, html, p, a, h1, span {
+  font-family: 'Montserrat', sans-serif;
+}
+
 section {
   text-align: center;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 .transparent {
   background-color: transparent;
+}
+
+.no-shadow {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.buscador {
+  width: 280px !important;
+}
+
+.loginForm {
+  width: 320px;
 }
 
 .navbar-collapse.collapse.show,
@@ -153,7 +175,7 @@ footer {
 }
 
 #nosotros header #carousel-header .carousel-item img {
-  height: 70vh;
+  height: 40vh;
 }
 
 #nosotros header #info-header {
@@ -171,19 +193,47 @@ footer {
 
 @media (min-width: 1200px) {
   #nosotros header #carousel-header .carousel-item img {
-    height: 70vh;
+    height: 50vh;
   }
   #nosotros header #info-header {
-    margin-top: 19rem;
+    margin-top: 11rem;
   }
 }
 
-@media (min-width: 1400px) {
-  #nosotros header #carousel-header .carousel-item img {
-    height: 80vh;
+#serviciosOnline .tramite-single {
+  width: 50%;
+}
+
+@media (min-width: 1200px) {
+  #serviciosOnline .tramite-single {
+    width: 25%;
   }
-  #nosotros header #info-header {
-    margin-top: 20rem;
+}
+
+#detalleProducto nav {
+  background: -webkit-gradient(linear, left top, right top, color-stop(6%, #3e6094), to(#1d324b));
+  background: linear-gradient(90deg, #3e6094 6%, #1d324b 100%);
+}
+
+#detalleProducto .price {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  #detalleProducto .price {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}
+
+#tramite {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  #tramite {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

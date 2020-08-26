@@ -1,0 +1,19 @@
+#serviciosOnline {
+    .tramite-single {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+    #serviciosOnline {
+        .tramite-single {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+}

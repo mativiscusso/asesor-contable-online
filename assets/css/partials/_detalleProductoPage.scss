@@ -1,0 +1,23 @@
+#detalleProducto {
+    nav {
+        background: $gradiente-azul;
+    }
+    .price {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+    #detalleProducto {
+        .price {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+}

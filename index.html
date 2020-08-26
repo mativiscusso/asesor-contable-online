@@ -23,7 +23,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark z-depth-0">
             <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="assets/img/logo.png" height="60" class="d-inline-block align-top" alt="mdb logo">
             </a>
             <!-- Collapse button -->
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="basicExampleNav">
                 <!-- Links -->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link text-uppercase" href="/">home
                         </a>
                     </li>
@@ -46,9 +46,9 @@
                     <li class="nav-item dropdown multi-level-dropdown">
                         <a href="#" id="menu" data-toggle="dropdown"
                             class="nav-link dropdown-toggle w-100 text-uppercase">servicios</a>
-                        <ul class="dropdown-menu mt-2 rounded-0 transparent border-0 z-depth-1">
+                        <ul class="dropdown-menu mt-2 rounded-0 bg-dark border-0 z-depth-1">
                             <li class="dropdown-item p-0">
-                                <a href="#" class="text-white w-100 text-uppercase">online</a>
+                                <a href="servicios-online.html" class="text-white w-100 text-uppercase">online</a>
                             </li>
                             <li class="dropdown-item p-0">
                                 <a href="#" class="text-white w-100 text-uppercase">presenciales</a>
@@ -66,12 +66,32 @@
                     </li>
                 </ul>
                 <!-- Links -->
+
                 <form class="form-inline">
-                    <div class="md-form my-0">
+                    <div class="md-form my-0 d-flex align-items-baseline">
                         <i class="fas fa-search text-white fa-1x"></i>
-                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                        <input class="form-control mr-sm-4 buscador" type="text" placeholder="Buscar"
+                            aria-label="Search">
                     </div>
                 </form>
+                
+                <div class="pt-3 px-4 d-flex">
+                    <span>
+                        <a href="">
+                            <i class="fas fa-shopping-cart text-white"></i>
+                        </a>
+                    </span>
+                    <span class="ml-3">
+                        <a href="perfil.html">
+                            <i class="fas fa-user text-white"></i>
+                        </a>
+                    </span>
+                    <span class="ml-3">
+                        <form action="/logout" method="post">
+                            <i class="fas fa-sign-out-alt text-white"></i>
+                        </form>
+                    </span>
+                </div>
             </div>
             <!-- Collapsible content -->
         </nav>
@@ -79,9 +99,11 @@
 
         <!-- Call to action -->
         <div id="call-header" class="py-4 text-white">
-            <h1 class="text-uppercase display-4">asesor</h1>
+            <h1 class="text-uppercase display-4 font-weight-bold">asesor</h1>
             <h3 class="text-uppercase">contable online</h3>
-            <button class="btn btn-primary text-uppercase rounded-pill">contactar</button>
+            <button class="btn btn-primary rounded-pill">
+                <a href="#contacto" class="text-uppercase text-white">contactar</a>
+                </button>
         </div>
 
         <!--Carousel Wrapper-->
@@ -116,21 +138,20 @@
 
         <!-- Seccion Info -->
         <div id="info-header"
-            class="d-flex flex-column container text-white rounded align-items-center w-100 pt-3 pb-4 z-depth-3">
+            class="d-flex flex-column container text-white rounded align-items-stretch w-100 pt-3 pb-4 z-depth-3">
             <div class="flex-column py-2 text-center">
-                <i class="fas fa-chart-line fa-2x p-3"></i>
-                <h4 class="m-0 text-uppercase">profesionales</h4>
-                <p class="m-0 px-5">Somos un equipo de profesionales en Ciencias Económicas matriculados en el Consejo
-                    Profesional de...</p>
+                <i class="fas fa-chart-line fa-3x p-3"></i>
+                <h4 class="m-0 text-uppercase font-weight-bold">profesionales</h4>
+                <p class="m-0 px-5">Somos un equipo de profesionales en Ciencias Económicas matriculados.</p>
             </div>
             <div class="flex-column py-2 text-center">
-                <i class="fas fa-user-tie fa-2x p-3"></i>
-                <h4 class="m-0 text-uppercase">cofiables</h4>
+                <i class="fas fa-user-tie fa-3x p-3"></i>
+                <h4 class="m-0 text-uppercase font-weight-bold">cofiables</h4>
                 <p class="m-0 px-5">Preservamos la confidencialidad de la información recibida.</p>
             </div>
             <div class="flex-column py-2 text-center">
-                <i class="far fa-clock fa-2x p-3"></i>
-                <h4 class="m-0 text-uppercase">simple</h4>
+                <i class="far fa-clock fa-3x p-3"></i>
+                <h4 class="m-0 text-uppercase font-weight-bold">simple</h4>
                 <p class="m-0 px-5">Resolvé tus asuntos fiscales de manera rápida sin moverte de tu negocio.</p>
             </div>
         </div>
@@ -185,11 +206,38 @@
         <section class="container">
             <h3 class="text-uppercase">afip</h1>
                 <div class="responsive">
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
+
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
                 </div>
         </section>
         <!-- /.afip -->
@@ -198,11 +246,36 @@
         <section class="container pt-5">
             <h3 class="text-uppercase">api y municipal</h1>
                 <div class="responsive">
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
-                    <div class="p-1"><img src="assets/img/producto.jpg" alt="" class="img-fluid"></div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
+                    <div class="p-1 view overlay zoom">
+                        <a href="detalle-producto.html">
+                            <img src="assets/img/producto.jpg" alt="afip" class="img-fluid mx-auto">
+                        </a>
+                        <p class="pt-2">NOMBRE TRAMITE</p>
+                    </div>
                 </div>
         </section>
         <!-- /.api y municipal -->
@@ -215,7 +288,7 @@
 
         <!-- Formulario Contacto -->
         <section id="contacto" class="container">
-            <div class="card">
+            <div class="card no-shadow">
 
                 <h5 class="card-header white-text text-center py-4">
                     <strong>Contacto</strong>

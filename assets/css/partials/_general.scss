@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body,html,p,a,h1,span {
+  font-family: 'Montserrat', sans-serif;
+}
 $gradiente-azul: linear-gradient(
   90deg,
   rgba(62, 96, 148, 1) 6%,
@@ -10,9 +15,21 @@ $tipografia: "";
 section {
   text-align: center;
 }
+h1 {
+  font-size: 2rem;
+}
 
 .transparent {
   background-color: transparent;
+}
+.no-shadow {
+  box-shadow: none !important;
+}
+.buscador {
+  width: 250px!important;
+}
+.loginForm {
+  width: 320px;
 }
 
 .navbar-collapse.collapse.show,
