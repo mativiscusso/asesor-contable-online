@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-body, html, p, a, h1, span {
-  font-family: 'Montserrat', sans-serif;
+body,
+html,
+p,
+a,
+h1,
+span {
+  font-family: "Montserrat", sans-serif;
 }
 
 section {
@@ -9,6 +14,19 @@ section {
 
 h1 {
   font-size: 2rem;
+}
+
+#cart {
+  display: none;
+}
+
+.show {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  background-color: white;
+  padding: 1rem;
+  display: block;
 }
 
 .transparent {
@@ -21,7 +39,7 @@ h1 {
 }
 
 .buscador {
-  width: 280px !important;
+  width: 250px !important;
 }
 
 .loginForm {

@@ -1,6 +1,10 @@
-let cartIcon = document.querySelector(".fa-shopping-cart");
+let cartIcon = document.querySelector("#iconCart");
+let xCartIcon = document.querySelector("#xIconCart");
+let cart = document.querySelector("#cart");
 
 cartIcon.addEventListener("click", () => {
-  let cart = document.querySelector("#cart");
-  cart.classList.toggle = "show";
+  cart.style.display = "block";
+});
+xCartIcon.addEventListener("click", () => {
+  cart.style.display = "none";
 });
